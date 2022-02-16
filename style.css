@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 15px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background: #fff url(/assets/bg.png);
+}
+
+a {
+    text-decoration: none;
+}
+
+#container {
+    background: #ede9cc url(/assets/bg-container.png) top center repeat-y;
+    margin: 0 auto;
+    min-width: 740px;
+    max-width: 1180px;
+}
+
+/*=============== HEADER ===============*/
+header {
+    position: relative; /*Serviu para habilitar o position absolute da logo e do menu*/
+    background: #dbcd87;
+    height: 15.4em;
+    min-height: 250px;
+
+}
+
+header #logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    z-index: 1;
+    background: url(/assets/topo-imagem-principal.png) no-repeat;
+}
+
+header #logo a {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 3;
+    width: 151px; /*É O TAMANHO DA IMAGEM FORNECIDA*/
+    height: 66px; /*É O TAMANHO DA IMAGEM FORNECIDA*/
+}
+
+header #menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 450px;
+    height: 250px;
+    z-index: 2;
+    background: url(/assets/topo-imagem-lateral.png);
+}
+
+header #menu-content {
+    margin-left: 90px;
+    margin-right: 15px;
+    padding-top: 15px;
+}
+
+header #menu-content .menu-destinations {
+    border-top: 1px solid #b5ab56;
+    border-bottom: 1px solid #b5ab56;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 0.7em;
+    line-height: 2.1em;
+    color: #8b8448;
+}
+
+#menu-content .menu-destinations .locals {
+    float: left;
+}
+
+#menu-content .menu-destinations .reserve {
+    text-transform: uppercase;
+    background: #a29750;
+    color: #fff5b0;
+    padding: 0 10px; /*NO VÍDEO FOI USADO 5PX 10PX, MAS AO USAR ASSIM, O BOTÃO FICOU GRANDE DEMAIS. POR ISSO OPTEI EM 0 10PX*/
+    float: right;
+}
+
+/*=============== MENU-VERTICAL ===============*/
+#menu-content #menu-vertical {
+    padding-top: 15px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul#navigation {
+    float: left;
+}
+
+ul#navigation a {
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    line-height: 30px; /*SERVIU PARA DAR ESPAÇAMENTO ENTRE OS ELEMENTOS DA LISTA!*/
+    color: #6e672c;
+}
+
+ul#navigation a:hover {
+    background: #fdf6be;
+    transition: 0.2s;
+}
+
+#menu-vertical .depoiment {
+    float: right;
+}
+
+/*=============== MAIN-TEXTS ===============*/
+h2 {
+    color: #7d7640;
+    font-size: 1.1em;
+    padding: 5px 0;
+}
+
+p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+/*=============== MAIN ===============*/
+#main-area {
+    float: left;
+    width: 50%;
+    background: url(/assets/bg-area-principal.png) top left repeat-x;
+    padding: 15px 0;
+}
+
+#side-area {
+    float: right;
+    width: 50%;
+    background: url(/assets/bg-area-lateral.png) top left repeat-x;
+    padding: 20px 0;
+}
+
+main .content {
+    margin: 0 auto;
+    width: 90%;
+}
+
+/*=============== SIDE-AREA ===============*/
+#side-area #attractions li a img{
+    float: left;
+    margin: 20px 10px 0px 10px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    
+}
+
+#side-area #attractions li a h3 {
+    font-size: 0.95em;
+    font-weight: bold;
+    padding: 25px 0 10px 0;
+    color: #7d7640;
+}
+
+#side-area #attractions li a p {
+    font-size: 0.8em;
+    margin: 0;
+    height: 100px;
+    color: black;
+    
+}
+
+#side-area ul a:hover {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.329);
+    transition: 0.2s;
+}
+
+.divider {
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.329), #fff);
+}
+
+/*=============== FOOTER ===============*/
+footer {
+    clear: both;
+    padding: 16px;
+    background: #fff url(/assets/bg-rodape.png) repeat-x top;
+    color: #7d7640;
+    text-align: center;
+}
